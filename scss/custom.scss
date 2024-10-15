@@ -1,0 +1,45 @@
+// scss/custom.scss
+
+// 1. Override Bootstrap's default color variables with accessible colors
+$primary: #E04E4F;            // Bittersweet
+$secondary: #4D5B58;          // Hooker's Green
+$success: #E04E4F;            // Bittersweet (reused for success)
+$danger: #E04E4F;             // Bittersweet (reused for danger)
+$light: #FEF5EF;              // Seashell
+$dark: #06172B;               // Oxford Blue
+
+// 2. Override background and text colors
+$body-bg: #06172B;            // Oxford Blue
+$body-color: #FEF5EF;         // Seashell
+
+$logo-path: 'static/Logo.svg';
+
+/* Logo Image Class */
+/* Logo Styling */
+.logo-img {
+    max-width: 200px; /* Maximum width */
+    width: 100%;      /* Responsive width */
+    height: auto;     /* Maintains aspect ratio */
+    /* Optional: Add transition for hover effects */
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Logo Sizes */
+  @media (max-width: 576px) {
+    .logo-img {
+      max-width: 150px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .logo-img {
+      max-width: 250px;
+    }
+  }
+
+// 2. Import Bootstrap's Sass
+@import "../node_modules/bootstrap/scss/bootstrap";
