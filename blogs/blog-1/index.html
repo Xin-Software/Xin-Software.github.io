@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Building a Website with Hugo | Xin Software</title>
+
+    <link rel="stylesheet" href="/scss/main.css">
+<link rel="stylesheet" href="/css/fa/all.min.css">
+
+
+      <script src="/js/main.js"></script>
+<script src="/js/fa/all.min.js"></script>
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div class="container flex-grow-1 d-flex flex-column">
+    <header class="navbar navbar-expand-lg sticky-top nav-gradient-shadow navbar-solid">
+      
+
+<nav class="container-xxl flex-wrap flex-lg-nowrap py-3">
+  <a href='http://localhost:1313/' class="nav_brand">
+    <picture class="nav_brand">
+      <source media="(prefers-color-scheme: dark)" srcset="http://localhost:1313/images/Title1_Dark.png">
+      <source media="(prefers-color-scheme: light)" srcset="http://localhost:1313/images/Title1_Light.png">
+      <img class="nav_brand" src="http://localhost:1313/images/Title1_Light.png" alt="">
+    </picture>
+  </a>
+  <div class="offcanvas-lg offcanvas-end flex-grow-1">
+    <div class="offcanvas-header px-4 pb-0">
+      <button class="btn-close float-end" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4 pt-0 p-lg-0">
+    <ul class="navbar-nav flex-row flex-wrap ms-md-auto gap-3 align-items-center">
+    <li class="nav-item col-6 col-lg-auto">
+      <a aria-current="true" class="ancestor" href="/blogs/">Blogs</a>
+    </li>
+    <li class="nav-item col-6 col-lg-auto">
+      <a href="/docs/">Docs</a>
+    </li>
+
+      <li class="nav-item col-6 col-lg-auto">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="btn btn-dark nav-link dropdown-toggle d-flex" id="bd-theme" type="button" data-bs-toggle="dropdown" data-bs-display="static">
+          <i class="fa-solid fa-wand-magic theme-icon-active"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+              <i class="fa-solid fa-wand-magic"></i><span>&nbsp;Auto</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <i class="fa-solid fa-sun"></i><span>&nbsp;Light</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+              <i class="fa-solid fa-moon"></i><span>&nbsp;Dark</span>
+            </button>
+          </li>
+        </ul> 
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    </header>
+    <main class="flex-grow-1">
+      
+  <h1>Building a Website with Hugo</h1>
+  
+  
+  <small class="text-muted"><time datetime="2025-02-17T00:10:12&#43;00:00">February 17, 2025</time></small>
+  
+  <div class="single-content my-3">
+    <p>Those of you &ldquo;in the know&rdquo; may notice that this website is build using the static site generator <a href="https://gohugo.io">Hugo</a>.</p>
+<p>This blog is a documented account of my experience building the site.</p>
+<h2 id="humble-beginnings">Humble Beginnings</h2>
+<p>To give some context to this journey, I will outline my current expertise in building websites:</p>
+<ul>
+<li>None.</li>
+</ul>
+<p>Well, that&rsquo;s not entirely true. I have built several <a href="https://flask.palletsprojects.com/en/stable/">Flask</a> web apps, hand-writing HTML, typically making use of <a href="https://getbootstrap.com">Bootstrap</a> for styling, and even built a HTML rendering library in Python (<a href="https://github.com/NixonInnes/pythoml">Pythoml</a>).</p>
+<p>So actually, I have some experience in HTML, very little in the way of CSS - but none in the way of site generators, typical &ldquo;page&rdquo;/&ldquo;post&rdquo;/&ldquo;blog&rdquo;/&ldquo;layout&rdquo;&hellip; <em>stuff</em>.</p>
+<p>I started off following the Hugo <em>Getting Started</em> -&gt; <em>Quick Start</em> tutorial. A quick check fo what it looked like with <code>hugo serve</code> and <em>bam</em>, I had a terrible flashbang of a website filled with royal blue, underscored links. Retro 😎</p>
+<p>My first stop was to have a quick read of the <em>Themes</em> documentation, which led me almost straight into a theme library.</p>
+<p>After looking through several of the theme&rsquo;s, it became clear that the theme drove what <em>kind</em> of content was published. By that I mean, some themes are geared towards blog sites, some for &ldquo;feed&rdquo; like sites, etc. So, I had to decide on what content I wanted to include on the website.<br>
+I had some idea of what I wanted, but hadn&rsquo;t really settled on a solid plan. I maybe should have done this from the offset, but it was interesting to see that different theme&rsquo;s were flexible enough to specify content types (in a loose, and not so loose way).</p>
+<p>After a little deliberation, I decided I want to have:</p>
+<ul>
+<li><strong>Posts</strong><br>
+These would serve as medium-to-small walls of text that embody &ldquo;update&rdquo; type material. For example, &ldquo;We have updated <code>Xin.XYZ</code> library to version&hellip; blah&rdquo;</li>
+<li><strong>Blogs</strong><br>
+I wanted to include blogs so I could have a space to put longer content / ramblings about stuff that I find interesting.</li>
+<li><strong>Documentation</strong><br>
+I also wanted a section to house the documentation for our various libraries. How the HTML is rendered for these is still up for debate, but at least having the capability to house them here would be nice.</li>
+</ul>
+
+  </div>
+  <div class="single-tags">
+    
+
+  </div>
+  
+
+    </main>
+    <footer>
+      <div class="pt-3 text-center">
+    <small class="text-muted">Copyright 2025. All rights reserved.</small>
+</div>  
+
+    </footer>
+  </div>
+</body>
+<script src="/js/toggleMode4.js"></script>
+</html>

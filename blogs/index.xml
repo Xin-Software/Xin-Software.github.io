@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Xin Software</title>
+    <link>http://localhost:1313/blogs/</link>
+    <description>Recent content in Blogs on Xin Software</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2025 00:10:12 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Website with Hugo</title>
+      <link>http://localhost:1313/blogs/blog-1/</link>
+      <pubDate>Mon, 17 Feb 2025 00:10:12 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/blog-1/</guid>
+      <description>My journey building this website with Hugo</description>
+    </item>
+  </channel>
+</rss>

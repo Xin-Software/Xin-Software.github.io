@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Xin Software</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Xin Software</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2025 00:13:24 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/docs/xin.medius/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/xin.medius/introduction/</guid>
+      <description>&lt;p&gt;Xin Medius is &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/docs/xin.ordinatus/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/xin.ordinatus/introduction/</guid>
+      <description>&lt;p&gt;Xin Ordinatus is &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post 4</title>
+      <link>http://localhost:1313/posts/post-4/</link>
+      <pubDate>Mon, 17 Feb 2025 00:13:24 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Building a Website with Hugo</title>
+      <link>http://localhost:1313/blogs/blog-1/</link>
+      <pubDate>Mon, 17 Feb 2025 00:10:12 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/blog-1/</guid>
+      <description>My journey building this website with Hugo</description>
+    </item>
+    <item>
+      <title>Post 3</title>
+      <link>http://localhost:1313/posts/post-3/</link>
+      <pubDate>Mon, 17 Feb 2025 00:02:55 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post-3/</guid>
+      <description>&lt;p&gt;This is post 3&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing Higlighting</title>
+      <link>http://localhost:1313/posts/post-2/</link>
+      <pubDate>Mon, 17 Feb 2025 00:02:53 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post-2/</guid>
+      <description>This post is a test page for testing  syntax highlighting in code blocks.</description>
+    </item>
+    <item>
+      <title>Testing Shortcodes</title>
+      <link>http://localhost:1313/posts/post-1/</link>
+      <pubDate>Mon, 17 Feb 2025 00:02:49 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post-1/</guid>
+      <description>This post is a test page for various shortcodes.</description>
+    </item>
+    <item>
+      <title>Xin.Medius.Mediator</title>
+      <link>http://localhost:1313/docs/xin.medius/classes/mediator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/xin.medius/classes/mediator/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
